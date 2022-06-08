@@ -41,8 +41,8 @@ tips.forEach(tip =>{
 })
 
 function calculate(){
-    tipAmount = parseInt(selectedTip / 100 * billAmount.value / peopleAmount.value)
-    total.textContent = '$' + parseInt(billAmount.value / peopleAmount.value + tipAmount)
+    tipAmount = parseFloat(selectedTip / 100 * billAmount.value / peopleAmount.value)
+    total.textContent = '$' + parseFloat(billAmount.value / peopleAmount.value + tipAmount)
     tipTotal.textContent = '$' + tipAmount
 }
 

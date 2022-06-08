@@ -124,6 +124,7 @@ body{
                         background-color: $Verylightgrayishcyan;
                         padding-right: 20px;
                         font-size: 20px;
+                        border-radius: 5px;
                     }
                 }
             }
@@ -243,13 +244,18 @@ body{
             .calculator{
                 width: 100%;
                 height: 100%;
+                .select-tip{
+                    .tips{
+                        grid-template-columns: 1fr 1fr 30%;
+                    }
+                }
             }
             .result{
                 width: 100%;
                 height: 100%;
                 justify-content: space-between;
                 .total{
-                    margin-bottom: 85px;
+                    margin-bottom: 45px;
                 }
             }
         }
