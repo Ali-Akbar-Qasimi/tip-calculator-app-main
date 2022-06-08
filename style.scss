@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Epilogue:wght@500;700&family=Kumbh+Sans:wght@400;700&family=Manrope:wght@800&family=Open+Sans:wght@300;400&family=Public+Sans:wght@300;400;700&family=Rubik:wght@400;500;700&family=Shadows+Into+Light&display=swap');
+
+
+$Strongcyan: hsl(172, 67%, 45%);
+
+// Neutral
+
+$Verydarkcyan: hsl(183, 100%, 15%);
+$Darkgrayishcyan: hsl(186, 14%, 43%);
+$Grayishcyan: hsl(184, 14%, 56%);
+$Lightgrayishcyan: hsl(185, 41%, 84%);
+$Verylightgrayishcyan: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $Lightgrayishcyan;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .container-header{
+        letter-spacing: 10px;
+        color: $Verydarkcyan;
+        padding-block: 50px;
+    }
+    .form{
+        width: 100%;
+        height: 100%;
+        background-color: $White;
+        padding: 30px 20px;
+        border-radius: 20px 20px 0 0;
+        display: flex;
+        flex-direction: column;
+        .calculator{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            height: max-content;
+            .bill{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                p{
+                    color: $Darkgrayishcyan;
+                }
+                .input{
+                    width: 100%;
+                    display: flex;
+                    label{
+                        background-color: $Verylightgrayishcyan;
+                        border-radius: 10px 0 0 10px;
+                        width: 20px;
+                        height: 100%;
+                        padding: 10px;
+                        padding-left: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    input{
+                        flex-grow: 1;
+                        background-color: $Verylightgrayishcyan;
+                        outline: none;
+                        border: none;
+                        border-radius: 0 10px 10px 0;
+                        padding: 5px;
+                        font-size: 30px;
+                        text-align: end;
+                        padding-right: 20px;
+                        color: $Verydarkcyan;
+                    }
+                }
+            }
+            .select-tip{
+                display: grid;
+                gap: 10px;
+                .tip-header{
+                    width: 100%;
+                    color: $Darkgrayishcyan;
+                }
+                .tips{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 10px;
+                    .tip{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $Verydarkcyan;
+                        border-radius: 5px;
+                        padding-block: 5px;
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: $White;
+                        cursor: pointer;
+                    }
+                    .tip.active{
+                        background-color: $Strongcyan;  
+                        color: $Verydarkcyan;
+                    }
+                    input{
+                        text-align: end;
+                        color: $Darkgrayishcyan;
+                        border: none;
+                        outline: none;
+                        background-color: $Verylightgrayishcyan;
+                        padding-right: 20px;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .people-amount{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                p{
+                    font-size: 20px;
+                    color: $Darkgrayishcyan;
+                }
+                .input{
+                    width: 100%;
+                    display: flex;
+                    label{
+                        background-color: $Verylightgrayishcyan;
+                        border-radius: 10px 0 0 10px;
+                        width: 20px;
+                        height: 100%;
+                        padding: 10px;
+                        padding-left: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    input{
+                        flex-grow: 1;
+                        background-color: $Verylightgrayishcyan;
+                        outline: none;
+                        border: none;
+                        border-radius: 0 10px 10px 0;
+                        padding: 5px;
+                        font-size: 30px;
+                        text-align: end;
+                        padding-right: 20px;
+                        color: $Verydarkcyan;
+                    }
+                }
+            }
+        }
+        .result{
+            background-color: $Verydarkcyan;
+            height: max-content;
+            padding: 20px;
+            padding-top: 30px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 30px;
+            .tip-amount{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: $White;
+                .tip-amount-body{
+                    p{
+                        color: $Verylightgrayishcyan;
+                    }
+                    span{
+                        font-size: 16px;
+                        color: $Darkgrayishcyan;
+                    }
+                }
+                .tip-price{
+                    color: $Strongcyan;
+                    font-size: 30px;
+                    font-weight: 700;
+                }
+            }
+            .total{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: $White;
+                .total-body{
+                    p{
+                        color: $Verylightgrayishcyan;
+                    }
+                    span{
+                        font-size: 16px;
+                        color: $Darkgrayishcyan;
+                    }
+                }
+                .total-price{
+                    color: $Strongcyan;
+                    font-size: 30px;
+                    font-weight: 700;
+                }
+            }
+            .reset-btn{
+                padding: 10px;
+                text-align: center;
+                width: 100%;
+                background-color: $Strongcyan;
+                border-radius: 5px;
+                color: $Verydarkcyan;
+                font-size: 20px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:700px) {
+    .container{
+        .form{
+            flex-direction: row;
+            gap: 40px;
+            padding: 30px;
+            max-width: 80%;
+            border-radius: 20px;
+            justify-content: space-between;
+            .calculator{
+                width: 100%;
+                height: 100%;
+            }
+            .result{
+                width: 100%;
+                height: 100%;
+                justify-content: space-between;
+                .total{
+                    margin-bottom: 85px;
+                }
+            }
+        }
+    }
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -20px;
+    width: max-content;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}

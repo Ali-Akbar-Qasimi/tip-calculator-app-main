@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Epilogue:wght@500;700&family=Kumbh+Sans:wght@400;700&family=Manrope:wght@800&family=Open+Sans:wght@300;400&family=Public+Sans:wght@300;400;700&family=Rubik:wght@400;500;700&family=Shadows+Into+Light&display=swap");
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #c5e4e7;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .container-header {
+  letter-spacing: 10px;
+  color: #00494d;
+  padding-block: 50px;
+}
+
+.container .form {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 20px 20px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .form .calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.container .form .calculator .bill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.container .form .calculator .bill p {
+  color: #5e7a7d;
+}
+
+.container .form .calculator .bill .input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .form .calculator .bill .input label {
+  background-color: #f4fafa;
+  border-radius: 10px 0 0 10px;
+  width: 20px;
+  height: 100%;
+  padding: 10px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .form .calculator .bill .input input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #f4fafa;
+  outline: none;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  padding: 5px;
+  font-size: 30px;
+  text-align: end;
+  padding-right: 20px;
+  color: #00494d;
+}
+
+.container .form .calculator .select-tip {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+}
+
+.container .form .calculator .select-tip .tip-header {
+  width: 100%;
+  color: #5e7a7d;
+}
+
+.container .form .calculator .select-tip .tips {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.container .form .calculator .select-tip .tips .tip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #00494d;
+  border-radius: 5px;
+  padding-block: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+
+.container .form .calculator .select-tip .tips .tip.active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.container .form .calculator .select-tip .tips input {
+  text-align: end;
+  color: #5e7a7d;
+  border: none;
+  outline: none;
+  background-color: #f4fafa;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.container .form .calculator .people-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.container .form .calculator .people-amount p {
+  font-size: 20px;
+  color: #5e7a7d;
+}
+
+.container .form .calculator .people-amount .input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .form .calculator .people-amount .input label {
+  background-color: #f4fafa;
+  border-radius: 10px 0 0 10px;
+  width: 20px;
+  height: 100%;
+  padding: 10px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .form .calculator .people-amount .input input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #f4fafa;
+  outline: none;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  padding: 5px;
+  font-size: 30px;
+  text-align: end;
+  padding-right: 20px;
+  color: #00494d;
+}
+
+.container .form .result {
+  background-color: #00494d;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 20px;
+  padding-top: 30px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.container .form .result .tip-amount {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.container .form .result .tip-amount .tip-amount-body p {
+  color: #f4fafa;
+}
+
+.container .form .result .tip-amount .tip-amount-body span {
+  font-size: 16px;
+  color: #5e7a7d;
+}
+
+.container .form .result .tip-amount .tip-price {
+  color: #26c0ab;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.container .form .result .total {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.container .form .result .total .total-body p {
+  color: #f4fafa;
+}
+
+.container .form .result .total .total-body span {
+  font-size: 16px;
+  color: #5e7a7d;
+}
+
+.container .form .result .total .total-price {
+  color: #26c0ab;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.container .form .result .reset-btn {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background-color: #26c0ab;
+  border-radius: 5px;
+  color: #00494d;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+  .container .form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 40px;
+    padding: 30px;
+    max-width: 80%;
+    border-radius: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .form .calculator {
+    width: 100%;
+    height: 100%;
+  }
+  .container .form .result {
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .form .result .total {
+    margin-bottom: 85px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: -20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
